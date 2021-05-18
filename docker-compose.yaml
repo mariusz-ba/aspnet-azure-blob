@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  blob:
+    image: mcr.microsoft.com/azure-storage/azurite
+    ports:
+    - 10000:10000
+    volumes:
+    - ./azurite:/data
+    command: ["azurite-blob", "--blobHost", "0.0.0.0"]
+    

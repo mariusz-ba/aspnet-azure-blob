@@ -1,0 +1,53 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model AzureBlob.ViewModels.HomeViewModel;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Blob Storage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main > div {
+            flex: 1;
+            padding: 20px;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>Azure Blob Storage</h1>
+<main>
+    <div>
+        <img src="@Model.Image" alt="test"/>
+    </div>
+    <div>
+        <img src="@Model.Image" alt="test"/>
+    </div>
+    <div>
+        <img src="@Model.Image" alt="test"/>
+    </div>
+</main>
+</body>
+</html>
